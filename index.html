@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* Smooth scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#home" class="nav-name">Tanjimul Hasan Toha</a>
+    
+    <!-- Desktop Navigation (hidden on mobile) -->
+    <ul class="nav-menu desktop-nav" id="mainNav">
+      <li class="move-item"><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li class="move-item"><a href="#about"><i class="fa-solid fa-user"></i> About</a></li>
+      <li class="move-item"><a href="#education"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li class="move-item"><a href="#projects"><i class="fa-solid fa-folder-open"></i> Projects</a></li>
+      <li class="move-item"><a href="#skills"><i class="fa-solid fa-code"></i> Skills</a></li>
+    </ul>
+    
+    <!-- Menu Button with Dropdown (Visible on both desktop & mobile) -->
+    <div class="menu-dropdown">
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-btn">
+        <svg class="menu-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <span class="menu-text"><i class="fa-solid fa-bars"></i></span>
+      </label>
+
+      <div class="dropdown-content">
+        <!-- Desktop: Shows only "More" items -->
+        <div class="desktop-dropdown">
+          <ul class="dropdown-menu desktop-dropdown-menu">
+            <li>
+              <a href="#achievements" class="dropdown-item">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Achievements</span>
+              </a>
+            </li>
+            <li>
+              <a href="#publications" class="dropdown-item">
+                <i class="fa-solid fa-book"></i>
+                <span>Publications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#softskills" class="dropdown-item">
+                <i class="fa-solid fa-user-friends"></i>
+                <span>Soft Skills</span>
+              </a>
+            </li>
+            <li>
+              <a href="#extracurricular" class="dropdown-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Extra Curricular</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+        <!-- Mobile: Shows all items -->
+        <div class="mobile-dropdown">
+          <ul class="dropdown-menu mobile-dropdown-menu">
+            <!-- Main Nav Items for Mobile -->
+            <li class="mobile-nav-item">
+              <a href="#home" class="dropdown-item">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#about" class="dropdown-item">
+                <i class="fa-solid fa-user"></i>
+                <span>About</span>
+              </a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#education" class="dropdown-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Education</span>
+              </a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#projects" class="dropdown-item">
+                <i class="fa-solid fa-folder-open"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li class="mobile-nav-item">
+              <a href="#skills" class="dropdown-item">
+                <i class="fa-solid fa-code"></i>
+                <span>Skills</span>
+              </a>
+            </li>
+            
+            <!-- Divider -->
+            <li class="dropdown-divider">More</li>
+            
+            <!-- More Items (same as desktop) -->
+            <li>
+              <a href="#achievements" class="dropdown-item">
+                <i class="fa-solid fa-trophy"></i>
+                <span>Achievements</span>
+              </a>
+            </li>
+            <li>
+              <a href="#publications" class="dropdown-item">
+                <i class="fa-solid fa-book"></i>
+                <span>Publications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#softskills" class="dropdown-item">
+                <i class="fa-solid fa-user-friends"></i>
+                <span>Soft Skills</span>
+              </a>
+            </li>
+            <li>
+              <a href="#extracurricular" class="dropdown-item">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Extra Curricular</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Home Section -->
+  <section id="home">
+    <div class="container">
+      <div class="profile-picture">
+        <img src="IMG_20251119_184939_990-Photoroom.png" alt="My profile picture" class="profile-img" />
+      </div>
+      <h1>Hi, I'm <span class="highlight">Tanjimul Hasan Toha</span></h1>
+      <h2>Full Stack Developer & Designer</h2>
+      <p>I create beautiful and functional digital experiences. Passionate about clean code, elegant design, and
+        building products that make a difference.</p>
+      <div class="btn-group">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="CV.pdf" download class="btn btn-third">Download CV</a>
+        <a href="#contact"class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I'm a passionate developer with expertise in modern web technologies. I love turning complex problems into
+        simple, beautiful, and intuitive solutions.</p>
+
+      <div class="features">
+        <div class="feature-card">
+          <i class="fa-solid fa-code fa-3x icon"></i>
+          <h3>Clean Code</h3>
+          <p>Writing maintainable and scalable code is my priority.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-pen-nib fa-3x icon"></i>
+          <h3>Creative Design</h3>
+          <p>Combining aesthetics with functionality for great UX.</p>
+        </div>
+        <div class="feature-card">
+          <i class="fa-solid fa-bolt fa-3x icon"></i>
+          <h3>Fast Delivery</h3>
+          <p>Efficient workflows to bring ideas to life quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Education Section -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="section-divider"></div>
+
+      <div class="education-timeline">
+
+        <!-- Education Item 1 -->
+        <div class="education-item" data-aos="fade-up">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <div class="education-content">
+            <div class="education-header">
+              <h3 class="education-degree">Master of Science in Computer Science</h3>
+              <span class="education-gpa">GPA: 3.9/4.0</span>
+            </div>
+
+            <p class="education-institution">International Islamic University Chittagong</p>
+
+            <div class="education-meta">
+              <span class="education-location">
+                <i class="fas fa-map-marker-alt"></i> Chittagong, Bangladesh
+              </span>
+              <span class="education-period">
+                <i class="fas fa-calendar"></i> 2029 - 2031
+              </span>
+            </div>
+
+            <p class="education-description">
+              Specialized in Machine Learning and Data Science. Completed thesis on Deep Learning
+              applications in computer vision and natural language processing.
+            </p>
+
+            <div class="education-achievements">
+              <h4>Key Achievements:</h4>
+              <ul>
+                <li>Dean's List all semesters</li>
+                <li>Published research paper on Neural Networks</li>
+                <li>Teaching Assistant for Algorithm Design course</li>
+                <li>Winner of University AI Hackathon 2021</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Item 2 -->
+        <div class="education-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="education-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+
+          <div class="education-content">
+            <div class="education-header">
+              <h3 class="education-degree">Bachelor of Technology in Computer Engineering</h3>
+              <span class="education-gpa">GPA: 3.8/4.0</span>
+            </div>
+
+            <p class="education-institution">International Islamic University Chittagong</p>
+
+            <div class="education-meta">
+              <span class="education-location">
+                <i class="fas fa-map-marker-alt"></i> Chittagong, Bangladesh
+              </span>
+              <span class="education-period">
+                <i class="fas fa-calendar"></i> 2024 - 2028
+              </span>
+            </div>
+
+            <p class="education-description">
+              Comprehensive study of computer science fundamentals including algorithms,
+              data structures, software engineering, and database management.
+            </p>
+
+            <div class="education-achievements">
+              <h4>Key Achievements:</h4>
+              <ul>
+                <li>First Class with Distinction</li>
+                <li>President of Computer Science Society</li>
+                <li>Winner of University Hackathon 2019</li>
+                <li>Best Final Year Project Award</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+      <p>Here are some of my recent projects that showcase my skills and expertise.</p>
+
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+          <div class="project-content">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-stack e-commerce solution with payment integration and admin dashboard.</p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Code</a>
+              <a href="#">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+          <div class="project-content">
+            <h3>Task Management App</h3>
+            <p>Collaborative task management tool with real-time updates and team features.</p>
+            <div class="tags">
+              <span class="tag">Next.js</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Code</a>
+              <a href="#">Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
+          <div class="project-content">
+            <h3>Analytics Dashboard</h3>
+            <p>Data visualization dashboard with interactive charts and real-time metrics.</p>
+            <div class="tags">
+              <span class="tag">React</span>
+              <span class="tag">D3.js</span>
+              <span class="tag">Express</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Code</a>
+              <a href="#">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container">
+      <h2>Skills & Technologies</h2>
+      <p>Technologies and tools I use to bring ideas to life.</p>
+
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul class="skill-list">
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>Tailwind CSS</li>
+            <li>Next.js</li>
+            <li>Vue.js</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul class="skill-list">
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+            <li>REST APIs</li>
+          </ul>
+        </div>
+
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <ul class="skill-list">
+            <li>Git</li>
+            <li>Docker</li>
+            <li>Figma</li>
+            <li>AWS</li>
+            <li>CI/CD</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--More section-->
+
+  <!-- Learning Interest Section -->
+
+  <!-- Achievements Section -->
+  <!-- Achievements Section -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <h2 class="section-title">Achievements & Awards</h2>
+      <div class="section-divider"></div>
+
+      <!-- Stats Grid -->
+      <div class="achievements-stats" data-aos="fade-up">
+        <div class="stat-box">
+          <div class="stat-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3 class="stat-number" data-target="50">0</h3>
+          <p class="stat-label">Projects Completed</p>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3 class="stat-number" data-target="15">0</h3>
+          <p class="stat-label">Awards Won</p>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3 class="stat-number" data-target="500">0</h3>
+          <p class="stat-label">GitHub Contributions</p>
+        </div>
+
+        <div class="stat-box">
+          <div class="stat-icon">
+            <i class="fas fa-book"></i>
+          </div>
+          <h3 class="stat-number" data-target="8">0</h3>
+          <p class="stat-label">Publications</p>
+        </div>
+      </div>
+
+      <!-- Achievements Grid -->
+      <div class="achievements-grid">
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="achievement-badge trophy-gold">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>National Hackathon Winner</h3>
+            <p class="achievement-org">Tech Conference 2023</p>
+            <p class="achievement-date">March 2023</p>
+            <p class="achievement-desc">
+              First place winner among 150+ teams in national hackathon with an AI-powered
+              accessibility tool that helps visually impaired users navigate websites.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="achievement-badge award-blue">
+            <i class="fas fa-award"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Best Innovation Award</h3>
+            <p class="achievement-org">Current Company Name</p>
+            <p class="achievement-date">December 2022</p>
+            <p class="achievement-desc">
+              Recognized for developing an internal automation tool that improved team
+              productivity by 40% and reduced deployment time by 60%.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="achievement-badge star-purple">
+            <i class="fas fa-star"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Open Source Contributor of the Year</h3>
+            <p class="achievement-org">GitHub Community</p>
+            <p class="achievement-date">2020 - Present</p>
+            <p class="achievement-desc">
+              Active contributor to major open-source projects with 500+ contributions.
+              Maintained popular libraries with 10K+ stars combined.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="achievement-badge medal-green">
+            <i class="fas fa-medal"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Speaker at DevCon 2023</h3>
+            <p class="achievement-org">International Developer Conference</p>
+            <p class="achievement-date">June 2023</p>
+            <p class="achievement-desc">
+              Keynote speaker on "Building Scalable Web Applications" attended by 500+
+              developers from around the world.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="achievement-badge trophy-red">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Employee of the Year</h3>
+            <p class="achievement-org">Previous Company</p>
+            <p class="achievement-date">2021</p>
+            <p class="achievement-desc">
+              Selected among 200+ employees for exceptional performance, leadership,
+              and contribution to company growth.
+            </p>
+          </div>
+        </div>
+
+        <div class="achievement-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="achievement-badge award-indigo">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <div class="achievement-content">
+            <h3>Research Publication Excellence</h3>
+            <p class="achievement-org">IEEE Conference</p>
+            <p class="achievement-date">September 2022</p>
+            <p class="achievement-desc">
+              Published research paper on Machine Learning optimization techniques in
+              IEEE international conference with high citation count.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recognition Section -->
+      <div class="recognition-banner" data-aos="zoom-in" data-aos-delay="700">
+        <div class="recognition-content">
+          <i class="fas fa-quote-left"></i>
+          <h3>Recognition & Impact</h3>
+          <p>
+            Throughout my career, I've been fortunate to receive recognition for my work and
+            contributions to the tech community. These achievements motivate me to continue
+            pushing boundaries and creating impactful solutions that make a difference.
+          </p>
+          <i class="fas fa-quote-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Publications Section -->
+  <!-- Publications Section -->
+  <section id="publications" class="section publications-section">
+    <div class="container">
+      <h2 class="section-title">Publications & Research</h2>
+      <div class="section-divider"></div>
+
+      <!-- Publication Stats -->
+      <div class="publication-stats" data-aos="fade-up">
+        <div class="pub-stat">
+          <i class="fas fa-file-alt"></i>
+          <h3>2</h3>
+          <p>Journal Papers</p>
+        </div>
+        <div class="pub-stat">
+          <i class="fas fa-users"></i>
+          <h3>1</h3>
+          <p>Conference Paper</p>
+        </div>
+      </div>
+
+      <!-- Journal Publications -->
+      <div class="publications-category">
+        <h3 class="category-title">
+          <i class="fas fa-book"></i> Journal Articles
+        </h3>
+
+        <!-- ONE Journal Paper -->
+        <div class="publication-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="pub-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <div class="pub-content">
+            <h4 class="pub-title">
+              Deep Learning Approaches for Real-Time Object Detection
+            </h4>
+
+            <p class="pub-authors">
+              <i class="fas fa-users"></i>
+              <strong>Your Name</strong>, Co-Author
+            </p>
+
+            <p class="pub-journal">
+              <i class="fas fa-book-open"></i>
+              <em>IEEE Transactions on Neural Networks</em>
+            </p>
+
+            <div class="pub-meta">
+              <span class="pub-year">
+                <i class="fas fa-calendar"></i> 2023
+              </span>
+              <span class="pub-doi">
+                <i class="fas fa-link"></i> DOI: 10.1109/TNNLS.2023.1234567
+              </span>
+            </div>
+
+            <p class="pub-abstract">
+              <strong>Abstract:</strong> A deep learning-based object detection method optimized
+              for real-time autonomous systems.
+            </p>
+
+            <div class="pub-actions">
+              <a href="#" class="pub-btn btn-pdf">
+                <i class="fas fa-file-pdf"></i> View PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conference Publications -->
+      <div class="publications-category">
+        <h3 class="category-title">
+          <i class="fas fa-chalkboard-teacher"></i> Conference Presentations
+        </h3>
+
+        <div class="conference-grid">
+          <!-- ONE Conference Item -->
+          <div class="conference-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="conf-type">Oral Presentation</div>
+            <h4>Building Scalable Microservices</h4>
+
+            <p class="conf-event">International Conference on Software Engineering (ICSE)</p>
+
+            <div class="conf-meta">
+              <span><i class="fas fa-map-marker-alt"></i> San Francisco, USA</span>
+              <span><i class="fas fa-calendar"></i> May 2023</span>
+            </div>
+
+            <a href="#" class="conf-link">
+              View Slides <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Soft Skills Section -->
+  <section id="softskills">
+    <div class="container">
+      <h2>Soft Skills</h2>
+      <p>Essential interpersonal and professional skills that complement my technical expertise.</p>
+
+      <div class="softskills-grid">
+        <div class="softskill-card">
+          <div class="skill-circle">
+            <i class="fa-solid fa-users fa-3x"></i>
+          </div>
+          <h3>Team Collaboration</h3>
+          <p>Working effectively with diverse teams, sharing knowledge, and contributing to collective success.</p>
+        </div>
+
+        <div class="softskill-card">
+          <div class="skill-circle">
+            <i class="fa-solid fa-comments fa-3x"></i>
+          </div>
+          <h3>Communication</h3>
+          <p>Clear and effective communication across technical and non-technical stakeholders.</p>
+        </div>
+
+        <div class="softskill-card">
+          <div class="skill-circle">
+            <i class="fa-solid fa-lightbulb fa-3x"></i>
+          </div>
+          <h3>Problem Solving</h3>
+          <p>Analytical thinking and creative approaches to overcome challenges and find innovative solutions.</p>
+        </div>
+
+        <div class="softskill-card">
+          <div class="skill-circle">
+            <i class="fa-solid fa-clock fa-3x"></i>
+          </div>
+          <h3>Time Management</h3>
+          <p>Prioritizing tasks, meeting deadlines, and maintaining productivity in fast-paced environments.</p>
+        </div>
+
+        <div class="softskill-card">
+          <div class="skill-circle">
+            <i class="fa-solid fa-bolt fa-3x"></i>
+          </div>
+          <h3>Adaptability</h3>
+          <p>Quickly learning new technologies and adjusting to changing project requirements.</p>
+        </div>
+
+        <div class="softskill-card">
+          <div class="skill-circle">
+            <i class="fa-solid fa-crown fa-3x"></i>
+          </div>
+          <h3>Leadership</h3>
+          <p>Guiding teams, mentoring junior developers, and taking initiative on projects.</p>
+        </div>
+
+        <div class="softskill-card">
+          <div class="skill-circle">
+            <i class="fa-solid fa-puzzle-piece fa-3x"></i>
+          </div>
+          <h3>Critical Thinking</h3>
+          <p>Evaluating information objectively and making informed decisions based on data and analysis.</p>
+        </div>
+
+        <div class="softskill-card">
+          <div class="skill-circle">
+            <i class="fa-solid fa-face-smile fa-3x"></i>
+          </div>
+          <h3>Emotional Intelligence</h3>
+          <p>Understanding and managing emotions to build strong professional relationships.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Extra Curricular Section -->
+  <section id="extracurricular">
+    <div class="container">
+      <h2>Extra Curricular Activities</h2>
+      <p>Beyond coding, I engage in various activities that enrich my personal and professional growth.</p>
+
+      <div class="extracurricular-grid">
+        <div class="activity-card">
+          <div class="activity-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+            <i class="fa-solid fa-briefcase activity-icon fa-3x"></i>
+          </div>
+          <div class="activity-content">
+            <h3>Tech Community Speaker</h3>
+            <p>Regular speaker at tech meetups and conferences, sharing knowledge on web development and best practices.
+            </p>
+            <ul class="activity-highlights">
+              <li>Conducted 15+ technical workshops</li>
+              <li>Speaker at 5 major tech conferences</li>
+              <li>Mentored 50+ aspiring developers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+            <i class="fa-solid fa-book activity-icon fa-3x"></i>
+          </div>
+          <div class="activity-content">
+            <h3>Open Source Contributor</h3>
+            <p>Active contributor to various open source projects, helping improve tools used by developers worldwide.
+            </p>
+            <ul class="activity-highlights">
+              <li>100+ contributions on GitHub</li>
+              <li>Maintainer of 3 open source projects</li>
+              <li>1000+ stars across repositories</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+            <i class="fa-solid fa-code-branch activity-icon fa-3x"></i>
+          </div>
+          <div class="activity-content">
+            <h3>Hackathon Participant</h3>
+            <p>Enthusiastic participant in coding competitions and hackathons, building innovative solutions under
+              pressure.</p>
+            <ul class="activity-highlights">
+              <li>Winner of 3 major hackathons</li>
+              <li>Participated in 20+ coding competitions</li>
+              <li>Built 10+ prototype applications</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+            <i class="fa-solid fa-pen-nib activity-icon fa-3x"></i>
+          </div>
+          <div class="activity-content">
+            <h3>Technical Blogger</h3>
+            <p>Writing technical articles and tutorials to help developers learn new technologies and solve common
+              problems.</p>
+            <ul class="activity-highlights">
+              <li>Published 50+ technical articles</li>
+              <li>100K+ monthly blog readers</li>
+              <li>Featured on major tech publications</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+            <i class="fa-solid fa-users activity-icon fa-3x"></i>
+          </div>
+          <div class="activity-content">
+            <h3>Volunteer & Community Service</h3>
+            <p>Teaching coding to underprivileged students and contributing to non-profit tech initiatives.</p>
+            <ul class="activity-highlights">
+              <li>Taught coding to 200+ students</li>
+              <li>Volunteered at 10+ community events</li>
+              <li>Built websites for 5 NGOs</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-image" style="background: linear-gradient(135deg, #fdbb2d 0%, #22c1c3 100%);">
+            <i class="fa-solid fa-basketball-ball activity-icon fa-3x"></i>
+          </div>
+          <div class="activity-content">
+            <h3>Sports & Fitness</h3>
+            <p>Maintaining physical and mental health through regular sports activities and fitness routines.</p>
+            <ul class="activity-highlights">
+              <li>Marathon runner - 5 races completed</li>
+              <li>Team captain of cricket club</li>
+              <li>Yoga practitioner for mental wellness</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section -->
+  <!-- Contact Section (Now at the very end) -->
+  <section id="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p>I'm always open to new opportunities and collaborations. Feel free to reach out if you'd like to work together!
+      </p>
+
+      <div class="social-links">
+        <a href="mailto:mdtoha0264@gmail.com" class="social-link">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/md-tanjimul-1a6a68353" class="social-link">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/toha-citizen" class="social-link">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.facebook.com/share/17qN4KFdZP/" class="social-link">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+      </div>
+
+      <form class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+      <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+      </footer>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
